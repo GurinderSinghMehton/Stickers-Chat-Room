@@ -1,0 +1,128 @@
+body {
+    margin-top: 3rem;
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.87), rgba(0, 0, 255, 0.87));
+}
+
+.conatiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo {
+    margin: 0 1rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(228 156 74);
+    background: url(images/back.png);
+    -webkit-background-clip: Text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back {
+    100%{
+        background-position: 2000px 0;
+    }
+    
+}
+
+.logo-img {
+    height: 400px;
+}
+
+
+
+.box-area {
+    margin: 0 1rem;
+}
+
+.message-container {
+    border: 3px solid #6c757d;
+    border-radius: 10px;
+    background-image: url(bck);
+    height: 50rem;
+    width: 50rem;
+    margin-bottom: 5px;
+    padding: 33px;
+    overflow-y: auto;
+}
+
+.message-container::-webkit-scrollbar {
+    display: none;
+}
+
+.message-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.message {
+    /* background-color: white; */
+    word-wrap: break-word;
+    width: auto;
+    max-width: 50%;
+    height: auto;
+    padding: 10px;
+    margin: 5px 12px;
+    font-size: large;
+    font-weight: 400;
+}
+
+.left {
+    background-color: #BB6EF5;
+    float: left;
+    clear: both;
+    border-radius: 10px 10px 10px 0;
+}
+
+.new-join {
+    background-color: #ffffff;
+    float: right;
+    clear: both;
+    border-radius: 10px 10px 0 10px;
+}
+
+.room-join{
+    background-color: #dad9df;
+    float: right;
+    clear: both;
+    border-radius: 10px 10px 0 10px;
+    font-weight: 500;
+}
+
+.right {
+    background-color: #e49c4a;
+    float: right;
+    clear: both;
+    border-radius: 10px 10px 0 10px;
+}
+
+.message-area {
+    /* border: 3px solid black; */
+    padding: 0.5rem 0;
+    /* background-image: url("3.png"); */
+}
+
+.message-area form input {
+    /* border: 2px solid black; */
+    margin-left: 5px;
+    /* width: 22rem; */
+    width: 20rem;
+    height: 2rem;
+    padding: 20px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.message-area form button {
+    height: 2.4rem;
+    width: 4rem;
+}
